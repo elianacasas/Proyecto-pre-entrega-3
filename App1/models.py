@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Velero(models.Model):
+class Suscriptos(models.Model):
     username = models.CharField(max_length=20)
     email = models.EmailField(max_length=60)
     password = models.IntegerField()
@@ -10,14 +10,14 @@ class Velero(models.Model):
     date_of_birth =models.DateField()
 
 
-class Band_members(models.Model):
+class Historias(models.Model):
     name = models.CharField(max_length=20)
-    last_name = models.CharField(max_length=20)
-    age = models.IntegerField()
-    date_of_join = models.DateField()
-    instrument = models.CharField(max_length=20)
+    opinion = models.CharField(max_length=200)
+    date = models.DateField()
     
-class Albums(models.Model):
+    
+class Playlist(models.Model):
     name = models.CharField(max_length=20)
-    date_of_record = models.DateField()
+    date = models.DateField()
+    link = models.URLField()
     
