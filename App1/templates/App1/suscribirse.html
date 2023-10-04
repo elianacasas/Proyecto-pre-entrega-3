@@ -1,0 +1,37 @@
+{%extends "App1/base.html"%}
+
+{%load static%}
+
+{%block Susbribite%}
+<section class="py-1">
+    <div class="container my-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>¡Suscribite para recibir notificaciones!</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+
+                <form method="post">
+                    {% csrf_token %}
+                    <p>Nombre de usuario: <input type = "text" name="username">
+                    <p>Correo electrónico: <input typw = "text" name="email">
+                    <p>Constraseña: <input typw = "text" name="password">
+                    <p>Nombre: <input typw = "text" name="first_name">
+                    <p>Apellido: <input typw = "text" name="last_name"> <br>
+                    <input type= "submit" value="Enviar">
+                </form>
+                <ul>
+         
+
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock Susbribite%}

@@ -17,33 +17,59 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">Indomita Tribu</a>
+                <a class="navbar-brand" href="#!">It´s tea o´clock</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Hisotoria</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Playlist</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Susbribite</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{%url 'Inicio'%}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{%url 'LeerCafeterias'%}">Cafeterias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{%url 'Suscribirse'%}">Susbribite</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{%url 'Valoranos'%}">Valoranos</a></li>
+                        
+                      
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url({% static 'App1/assets/img/portada1.jpg' %}); padding: 100px 0 !important;">
+        <header class="py-5 bg-image-full" style="background-image: url({% static 'App1/assets/img/portada.jpg' %}); padding: 100px 0 !important;">
             <div class="text-center my-5">
                 
-                <h1 class="text-white fs-3 fw-bolder">La Vela Puerca</h1>
-                <p class="text-white-50 mb-0">Fan page</p>
+                <h1 class="text-white fs-3 fw-bolder">Coffee maps</h1>
             </div>
         </header>
         <!-- Content section-->
         {%block inicio%}
         {%endblock inicio%}
 
-        {%block historia%}
-        {%endblock historia%}
+        {%block agregar%}
+        {%endblock agregar%}
 
+        {%block postAgregar%}
+        {%endblock postAgregar%}
+
+        {%block Susbribite%}
+        {%endblock Susbribite%}
+
+        {%block postSuscripcion%}
+        {%endblock postSuscripcion%}
+
+        {%block valorar%}
+        {%endblock valorar%}
+
+        {%block postValoracion%}
+        {%endblock postValoracion%}
+
+        {%block cafeterias%}
+        {%endblock cafeterias%}
+
+        {%block buscar%}
+        {%endblock buscar%}
+
+        {%block mostrar%}
+        {%endblock mostrar%}
+
+       
         
         <!-- Footer-->
         <footer class="py-5 bg-dark">

@@ -1,23 +1,24 @@
 from django.db import models
 
+
 # Create your models here.
 class Suscriptos(models.Model):
     username = models.CharField(max_length=20)
     email = models.EmailField(max_length=60)
     password = models.IntegerField()
-    firs_name = models.CharField(max_length=20)
+    first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
-    date_of_birth =models.DateField()
+    
 
-
-class Historias(models.Model):
+class Cafeterias(models.Model):
     name = models.CharField(max_length=20)
+    direccion = models.CharField(max_length=200)
+    horario = models.CharField(max_length=20)
+    descripcion = models.CharField(max_length=100)
+    
+    
+class Reseñas(models.Model):
+    name = models.CharField(max_length=20, null=True, blank=True)
     opinion = models.CharField(max_length=200)
-    date = models.DateField()
-    
-    
-class Playlist(models.Model):
-    name = models.CharField(max_length=20)
-    date = models.DateField()
-    link = models.URLField()
+    puntaje = models.IntegerField()
     
