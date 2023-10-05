@@ -9,15 +9,20 @@
             <div class="col-lg-6">
 
                <h4> Resultados de busqueda </h4>
-               {%for c in cafeterias%}
+               {% if cafeterias%}
+                    {%for c in cafeterias%}
 
-                    <table>
-                       <li> {{c.name}} </li>
-                       {{c.direccion}}
-                       {{c.horario}} <br>
-                       {{c.descripcion}}
-                     </table>
-                {%endfor%}
+                        <table>
+                           <li> {{c.name}} </li>
+                            {{c.direccion}}
+                            {{c.horario}} <br>
+                            {{c.descripcion}}
+                        </table>
+                    {%endfor%}
+                {%else %}
+                    <h4> Lo siento, no econtramos cafeterias en tu zona </h4>
+
+                {% endif %}
                 <h5><a class="btn btn-lg btn-light" style="background-color:grey" href="{%url 'Buscar'%}" style="color: black"> Buscar otra</a> </h5>
                 <h5><a class="btn btn-lg btn-light" style="background-color:grey" href="{%url 'LeerCafeterias'%}" style="color: black"> Volver a la guía</a> </h5>
             </div>

@@ -14,11 +14,10 @@ class Cafeterias(models.Model):
     name = models.CharField(max_length=20)
     direccion = models.CharField(max_length=200)
     horario = models.CharField(max_length=20)
-    descripcion = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=200)
     
     
 class Reseñas(models.Model):
-    name = models.CharField(max_length=20, null=True, blank=True)
     opinion = models.CharField(max_length=200)
     puntaje = models.IntegerField()
     
