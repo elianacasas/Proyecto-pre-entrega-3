@@ -15,7 +15,7 @@ Los usuarios pueden realizar las siguientes accciones:
 Sin estar logueados:
     - Ver la guía de cafeterías y entrar al detalle de cada una.
     - Buscar locales en su zona.
-    -Registrarse.
+    -Registrarse. ///
 Estando logueado:
     - Agregar nuevas cafeterías.
     - Comentar su experiencia en los locales que se encuentran en la guía.
